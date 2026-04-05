@@ -1,6 +1,6 @@
 01_data_cleaning.sql
 SQL
--- DATA CLEANING
+## DATA CLEANING
 
 -- 1. Fix incorrect pollution classification
 UPDATE well_pollution
@@ -27,7 +27,8 @@ SET number_of_people_served = 0
 WHERE number_of_people_served IS NULL;
 02_data_transformation.sql
 SQL
--- DATA TRANSFORMATION
+
+## DATA TRANSFORMATION
 
 -- 1. Total population served per water source
 CREATE VIEW water_source_summary AS
@@ -58,7 +59,8 @@ JOIN visits v ON ws.source_id = v.source_id
 JOIN location l ON v.location_id = l.location_id;
 03_analysis_queries.sql
 SQL
--- ANALYSIS QUERIES
+
+## ANALYSIS QUERIES
 
 -- 1. Water source usage ranking
 SELECT
@@ -90,7 +92,8 @@ GROUP BY province
 ORDER BY total_sources DESC;
 04_data_validation.sql
 SQL
--- DATA VALIDATION
+
+## DATA VALIDATION
 
 -- 1. Detect inconsistent pollution records
 SELECT *
@@ -117,7 +120,8 @@ GROUP BY employee_name
 ORDER BY error_count DESC;
 05_project_tracking.sql
 SQL
--- PROJECT TRACKING TABLE
+
+## PROJECT TRACKING TABLE
 
 CREATE TABLE project_progress (
     project_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -128,7 +132,7 @@ CREATE TABLE project_progress (
     priority_level VARCHAR(50)
 );
 
--- Insert example actions
+## Insert example actions
 INSERT INTO project_progress (location_id, issue_type, recommended_action, status, priority_level)
 VALUES
 (101, 'High Queue Time', 'Install additional taps', 'Pending', 'High'),
