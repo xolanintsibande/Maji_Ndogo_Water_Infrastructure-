@@ -5,7 +5,6 @@
 ![Records](https://img.shields.io/badge/Records-60%2C000%2B-blue)
 ![Tool](https://img.shields.io/badge/Tool-MySQL-orange)
 ![Dashboard](https://img.shields.io/badge/Dashboard-Power%20BI-yellow)
-![Last Updated](https://img.shields.io/badge/Last%20Updated-May%202026-lightgrey)
 
 ---
 
