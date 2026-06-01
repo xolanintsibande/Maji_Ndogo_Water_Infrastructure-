@@ -38,14 +38,13 @@
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
-2. [Dataset](#dataset)
-3. [Repository Structure](#repository-structure)
-4. [Methodology](#methodology)
-5. [Key Findings](#key-findings)
-6. [Recommendations](#recommendations)
-7. [Dashboard](#dashboard)
-8. [Tools and Skills](#tools-and-skills)
-9. [Limitations and Known Gaps](#limitations-and-known-gaps)
+2. [Dataset](#dataset)  
+3. [Methodology](#methodology)
+4. [Key Findings](#key-findings)
+5. [Recommendations](#recommendations)
+6. [Dashboard](#dashboard)
+7. [Tools and Skills](#tools-and-skills)
+8. [Limitations and Known Gaps](#limitations-and-known-gaps)
 10. [How to Run](#how-to-run)
 
 ---
@@ -77,32 +76,6 @@ This project analyzes water access and infrastructure conditions across Maji Ndo
 A full data dictionary covering all 7 tables, column definitions, primary and foreign keys, and known data quality issues is in [DATA.md](DATA.md).
 
 All employee names appear only in internal audit error analysis. No personally identifiable data is redistributed publicly.
-
----
-
-## Repository Structure
-
-maji-ndogo-water-analysis/
-│
-├── data/
-│   ├── raw/                   # Original survey export files (CSV)
-│   └── processed/             # Cleaned and validated output tables
-│
-├── sql/
-│   ├── 01_validation.sql      # Table relationship checks and join verification
-│   ├── 02_error_detection.sql # Contamination label checks and duplicate visit flags
-│   ├── 03_correction.sql      # Pollution reclassification and text standardization
-│   ├── 04_integrity.sql       # Survey-to-audit join and mismatch rate calculation
-│   └── 05_features.sql        # Feature engineering: total_served, avg_queue_time, rank_usage
-│
-├── dashboards/
-│   └── maji_ndogo.pbix        # Power BI dashboard file
-│
-├── notebooks/
-│   └── eda_summary.ipynb      # Supporting exploratory analysis
-│
-├── DATA.md                    # Full data dictionary for all 7 tables
-└── README.md
 
 ---
 
